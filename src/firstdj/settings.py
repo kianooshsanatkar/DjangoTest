@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'poll.apps.PollConfig',
+    
+    #Default Django Installed App
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,7 +76,7 @@ WSGI_APPLICATION = 'firstdj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "DjangoTestDB",
+        'NAME': "djangotestdb",
         'USER': 'django_test',
         'PASSWORD': '1234',
         'HOST': 'localhost'
